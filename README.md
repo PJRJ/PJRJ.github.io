@@ -18,17 +18,9 @@ python3 -m http.server 8000   # then open http://localhost:8000
 
 ## Deploy on GitHub Pages
 
-The site lives in `PJRJ/pedroruiz` and is served at `https://pjrj.github.io/pedroruiz/`.
-
-1. Pages on a free GitHub plan needs a **public** repository
-   (Settings → General → Danger Zone → Change visibility).
-2. **Settings → Pages → Build and deployment**: Source = *Deploy from a branch*,
-   Branch = `main` / `(root)`, then Save. The first build takes about a minute.
-3. Every `git push` to `main` redeploys the site.
-
-To serve it at the root URL `https://pjrj.github.io` instead, rename the repository to
-`PJRJ.github.io` (Settings → General → Repository name) and update the remote:
-`git remote set-url origin https://github.com/PJRJ/PJRJ.github.io.git`.
+The site lives in `PJRJ/PJRJ.github.io` and is served at **https://pjrj.github.io**.
+Pages is set to deploy from `main` / `(root)`, so every `git push` to `main` redeploys the site
+(the build takes about a minute; progress is under the repository's Actions tab).
 
 Optional custom domain: add it under Settings → Pages, point a `CNAME` DNS record at
 `pjrj.github.io`, and tick *Enforce HTTPS*.
