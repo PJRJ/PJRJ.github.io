@@ -18,7 +18,7 @@ python3 -m http.server 8000   # then open http://localhost:8000
 
 ## Deploy on GitHub Pages
 
-The site lives in `PJRJ/PedroSite` and is served at `https://pjrj.github.io/PedroSite/`.
+The site lives in `PJRJ/pedroruiz` and is served at `https://pjrj.github.io/pedroruiz/`.
 
 1. Pages on a free GitHub plan needs a **public** repository
    (Settings → General → Danger Zone → Change visibility).
